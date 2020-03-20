@@ -6,6 +6,7 @@ services:
         restart: always
         networks: 
             - nginx_network
+            - klud_site
         ports:
             - 80:80
             - 443:443
@@ -38,3 +39,5 @@ volumes:
 networks:
     nginx_network:
         name: nginx_network
+    klud_site:
+        name: klud_site
