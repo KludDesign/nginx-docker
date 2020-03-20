@@ -7,6 +7,7 @@ services:
         networks: 
             - nginx_network
             - klud_site
+            - wiki_klud
         ports:
             - 80:80
             - 443:443
@@ -41,3 +42,5 @@ networks:
         name: nginx_network
     klud_site:
         name: klud_site
+    wiki_klud:
+        name: wiki_klud
